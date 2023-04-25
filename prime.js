@@ -1,7 +1,14 @@
 let num = 5;
+let count=0;
 
-if (num % 2 == 0 || num % 3 == 0) {
-	console.log("Not a prime");
-} else {
-	console.log("Prime");
+for(let i=1;i<=num;i++){
+       if(num%i==0){
+    count++;
+        }
+}
+if(count==2){
+console.log("Prime Number");
+}
+else{
+console.log("Not a Prime Number");
 }
