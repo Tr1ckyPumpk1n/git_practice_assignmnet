@@ -1,14 +1,14 @@
-function check_prime(num) {
-	let factors = 0;
-	
-	for (let i = 1; i <= num; i++) {
-		if (num % i == 0) {
-			factors++;
-		}
-	}
+let num = 5;
+let count=0;
 
-	(factors == 2) ? console.log(num, "is prime") : console.log(num, "is not a prime");
+for(let i=1;i<=num;i++){
+       if(num%i==0){
+    count++;
+        }
 }
-
-check_prime(5);
-check_prime(4);
+if(count==2){
+console.log("Prime Number");
+}
+else{
+console.log("Not a Prime Number");
+}
